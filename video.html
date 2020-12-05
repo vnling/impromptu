@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Impromptu</title>
-    <link rel="stylesheet" href="style.css">
+  <title>Impromptu</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    <video id="video">
-        <source src="small.mp4" type="video/mp4">
-            Your browser does not support video.
-    </video>
-    <script src="script.js"></script>
+  <div class="buttonDiv">
+    <button class="playButton" id="play" type="button">PLAY!</button>
+  </div>
+  <div class="choiceDiv" id="choiceDivID">
+    <label>What should ______ do?</label>
+    <div class="choiceButton">
+      <button type="button" id="choice1">drink water water water</button>
+      <button type="button" id="choice2">cold one with the boys</button>
+    </div>
+  </div>
+  <video id="video">
+    <source src="small.mp4" type="video/mp4" />
+    Your browser does not support video.
+  </video>
+  <script src="script.js"></script>
 </body>
