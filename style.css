@@ -351,7 +351,7 @@ body {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  transform: translate(0, 40vh);
+  transform: translate(0, 30vh);
   animation: fadeIn ease 3s;
   -webkit-animation: fadeIn ease 3s;
 }
@@ -361,9 +361,10 @@ body {
 }
 
 #question {
+  width: 100%;
   margin: 10px;
   z-index: 2;
-  font-size: 1.8em;
+  font-size: 2.5em;
   font-weight: 600;
   font-family: "Josefin Sans", Helvetica, sans-serif;
   background-color: var(--secondary);
@@ -373,24 +374,29 @@ body {
 }
 
 .choiceDiv button {
-  margin: 10px 0px;
+  margin: 10px;
   z-index: 2;
-  font-size: 1.6em;
+  font-size: 2em;
   font-weight: 400;
   font-family: "Josefin Sans", Helvetica, sans-serif;
   background-color: var(--secondary);
   border: none;
   padding: 10px;
+  padding-right: 0;
   display: block;
   color: white;
   text-align: left;
-  width: 95%;
+  width: 96%;
 }
 
 /*div for the choices only */
 
 .choiceButton {
-  width: 45%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary);
+  transform: translate(0, 112px);
 }
 
 .choiceButton :hover {
@@ -433,20 +439,24 @@ body {
     transform: translate(0, -30vh);
   }
   .choiceDiv {
+    background-color: var(--primary);
     max-width: 98vw;
-    font-size: 0.8em;
+    font-size: 0.5em;
     display: block;
+    transform: translate(0, 40vh);
+  }
+  .choiceDiv button {
+    margin-left: 0;
   }
   #question {
-    margin: 0px;
+    margin: 10px 0px;
     padding: 20px 10px;
     width: 88vw;
   }
   .choiceButton {
     position: absolute;
     left: 0;
-    margin: 0px;
-    transform: translate(0, 65px);
+    transform: translate(0, 75px);
     width: 100%;
   }
   .choiceButton button {
