@@ -283,6 +283,7 @@ body {
   box-shadow: 5px 5px white;
   /* adds padding around the text inside the button, 10px is arbitrary but looks nice */
   padding: 10px;
+  padding-top: 20px;
   display: block;
   margin: auto;
   margin-top: 10px;
@@ -351,6 +352,8 @@ body {
   width: fit-content;
   margin: auto;
   transform: translate(0, 40vh);
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
 }
 
 #choiceDivID {
@@ -394,6 +397,13 @@ body {
   background-color: var(--tertiary);
 }
 
+@media only screen and (max-width: 768px) {
+  #welcome {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   #header {
     display: block;
@@ -401,7 +411,6 @@ body {
     text-align: center;
     color: var(--secondary);
     margin-top: 0;
-
   }
   #video {
     z-index: -2;
@@ -433,5 +442,12 @@ body {
   }
   .choiceButton button {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #welcome {
+    transform: translate(0, 8vh);
+    font-size: 0.8em;
   }
 }
