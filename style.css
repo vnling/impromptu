@@ -1,0 +1,508 @@
+:root {
+  /* --primary: white;
+  --secondary: black;
+  --tertiary: #444444; */
+  --primary: #e3dae7;
+  --secondary: #2b212f;
+  --tertiary: #715269;
+  --tertiary2: #586ba4;
+  --tertiary3: white;
+  /* #f68e5f - orange */
+}
+
+body {
+  background-color: var(--primary);
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+}
+
+#welcome {
+  transform: translate(0, 20vh);
+  color: var(--secondary);
+  text-align: center;
+  text-transform: none;
+  width: 50vw;
+  margin: auto;
+}
+
+#welcome1 {
+  font-size: 3em;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+}
+
+#welcome2 {
+  font-size: 1.2em;
+  animation: fadeIn2 ease 6s;
+  -webkit-animation: fadeIn2 ease 6s;
+  padding: 0 5vw;
+}
+
+#welcome3 {
+  font-size: 1.2em;
+  animation: fadeIn3 ease 9s;
+  -webkit-animation: fadeIn3 ease 9s;
+  padding: 20px 5vw;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn2 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn3 {
+  0% {
+    opacity: 0;
+  }
+  67% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn4 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#enterButton button {
+  /* positioning stuff; width, position:absolute and left center the element horizontally */
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  /* font adjustments and color settings, font family must be set separately */
+  font-size: 2em;
+  font-weight: 600;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  background-color: var(--secondary);
+  border: none;
+  box-shadow: 5px 5px white;
+  /* adds padding around the text inside the button, 10px is arbitrary but looks nice */
+  padding: 10px;
+  padding-top: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  /* animation */
+  animation: fadeIn4 ease 12s;
+  -webkit-animation: fadeIn4 ease 12s;
+}
+
+#enterButton a {
+  text-decoration: none;
+  color: white;
+}
+
+#enterButton :hover {
+  background-color: var(--tertiary);
+}
+
+#header {
+  display: none;
+}
+
+#video {
+  z-index: -2;
+  position: absolute;
+  top: 3%;
+  left: 0;
+  width: 100%;
+  height: 94%;
+}
+
+/*center play button */
+
+.playButton {
+  z-index: 2;
+  font-size: 4em;
+  font-weight: 500;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  background-color: var(--secondary);
+  border: none;
+  box-shadow: 5px 5px white;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+  margin-top: 50vh;
+  margin-bottom: 40px;
+  transform: translate(0, -50%);
+  color: white;
+}
+
+/*the div in which the button resides */
+
+.buttonDiv {
+  margin: auto;
+}
+
+.buttonDiv :hover {
+  background-color: var(--tertiary);
+}
+
+/*flex box for the question and choices */
+
+.choiceDiv {
+  background-color: var(--primary);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  transform: translate(0, 30vh);
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+}
+
+#choiceDivID {
+  display: none;
+}
+
+#question {
+  width: 100%;
+  margin: 10px;
+  z-index: 2;
+  font-size: 2.5em;
+  font-weight: 600;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  background-color: var(--secondary);
+  border: none;
+  padding: 40px 10px 20px;
+  color: white;
+}
+
+.choiceDiv button {
+  margin: 10px;
+  z-index: 2;
+  font-size: 2em;
+  font-weight: 400;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  background-color: var(--secondary);
+  border: none;
+  padding: 10px;
+  padding-right: 0;
+  display: block;
+  color: white;
+  text-align: left;
+  width: 96.5%;
+}
+
+/*div for the choices only */
+
+.choiceButton {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: var(--primary);
+  transform: translate(0, 150px);
+}
+
+.choiceButton :hover {
+  background-color: var(--tertiary);
+}
+
+@media only screen and (max-width: 768px) {
+  #welcome {
+    width: 90vw;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape) {
+  #welcome {
+    width: 98vw;
+    margin: auto;
+    transform: translate(0, 5vh);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    display: block;
+    font-size: 1.2em;
+    text-align: center;
+    color: var(--secondary);
+    margin-top: 0;
+  }
+  #video {
+    z-index: -2;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .playButton {
+    font-size: 2em;
+    padding: 8px 5px 5px;
+    transform: translate(0, -30vh);
+  }
+  .choiceDiv {
+    background-color: var(--primary);
+    max-width: 98vw;
+    font-size: 0.5em;
+    display: block;
+    transform: translate(0, 40vh);
+  }
+  .choiceDiv button {
+    margin-left: 0;
+  }
+  #question {
+    margin: 10px 0px;
+    padding: 20px 10px;
+    width: 88vw;
+  }
+  .choiceButton {
+    position: absolute;
+    left: 0;
+    transform: translate(0, 91px);
+    width: 100%;
+  }
+  .choiceButton button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+  #welcome {
+    font-size: 0.7em;
+    width: 98vw;
+    transform: translate(0, 5vh);
+  }
+  #enterButton button {
+    padding-top: 10px;
+    margin-top: 0px;
+  }
+  #header {
+    display: none;
+  }
+  #video {
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .playButton {
+    transform: translate(0, -8vh);
+  }
+  .choiceDiv {
+    transform: translate(0, 22vh);
+  }
+
+  #question {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .choiceButton {
+    background-color: var(--primary);
+    transform: translate(0, 75px);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #welcome {
+    transform: translate(0, 8vh);
+    font-size: 0.8em;
+  }
+}
