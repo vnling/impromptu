@@ -117,7 +117,7 @@ function playNextVideo() {
         } else if (headCount === 3) {
           video.setAttribute(
             "src",
-            "./Videos/FinalClips/Final3ChrisVeeSaf.m4v"
+            "./Videos/FinalClips/Final3ChrisSafVee.m4v"
           );
           video.play();
           stop = true;
@@ -223,7 +223,7 @@ function playNextVideo() {
           video.play();
           headCount++;
         } else if (headCount === 3) {
-          video.setAttribute("src", "./Videos/FinalClips/Final3QuimVeeSaf.m4v");
+          video.setAttribute("src", "./Videos/FinalClips/Final3SafQuimVee.m4v");
           video.play();
           stop = true;
         }
