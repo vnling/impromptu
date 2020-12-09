@@ -135,6 +135,7 @@ function playNextVideo() {
         } else if (headCount === 2) {
           video.setAttribute("src", "./Videos/VeeSee.m4v");
           video.play();
+          headCount++;
         } else if (headCount === 3) {
           video.setAttribute("src", "./Videos/SafSee.m4v");
           video.play();
