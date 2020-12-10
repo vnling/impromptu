@@ -367,7 +367,6 @@ choice2.onclick = function () {
 };
 //retry function where it reuses the change but modifies the content
 function retry() {
-  question.innerHTML = "Try and get more people to meet up!";
   choice1.innerHTML = "RETRY";
   choice1.style.textAlign = "center";
   choice1.style.fontSize = "4em";
@@ -375,4 +374,9 @@ function retry() {
   choice1.style.paddingTop = "20px";
   choice2.style.display = "none";
   choiceDiv.style.display = "flex";
+  if (chris && vee && quim && saf) {
+    question.innerHTML = "Retry to explore more possibilities!";
+  } else {
+    question.innerHTML = "Try and get more people to meet up!";
+  }
 }
